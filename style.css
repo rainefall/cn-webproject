@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;700&display=swap');
+
+html, body {
+    background: linear-gradient(#574c51,#280b03);
+    color: #fffdfa;
+    font-family: 'MuseoModerno', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #7b5435;
+    border-bottom: solid #c6b1b1 2px;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #574c51;
+    width: 100%;
+}
+
+.navbar span, .footer span {
+    padding: 4px 48px 8px 48px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.footer span + span {
+    border-left: double 4px #280b03;
+}
+
+span a {
+    text-decoration: none;
+    color: #fffdfa;
+    transition: color .25s;
+}
+
+span a:hover {
+    color: #d75757;
+}
+
+.navbar span.logo {
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 66vw;
+    margin-bottom: 32px;
+}
+
+.content img {
+    margin: 32px;
+    border: 2px outset #c6b1b1;
+    border-radius: 16px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: 75%
+}
+
+form {
+    text-align: center;
+}
+
+form input#submit {
+    margin-top: 8px;
+    width: 100%;
+    height: 4em;
+    background-color: #7b5435;
+    color: #fffdfa;
+    font-family: 'MuseoModerno', sans-serif;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: larger;
+    transition: background-color .25s;
+}
+
+form input#submit:hover {
+    background-color: #d75757;
+}
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #7b5435;
+        width: 100%;
+    }
+
+    .navbar span {
+        width: 100%;
+        border-bottom: solid 2px #c6b1b1;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #574c51;
+        width: 100%;
+    }
+
+    .footer span {
+        width: 100%;
+        border-bottom: solid 2px #280b03;
+    }
+
+    .footer span + span {
+        border-left: none;
+    }
+
+    .navbar span.logo {
+        margin-right: 0;
+        font-weight: bold;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90wv;
+    }
+    
+    .content img {
+        margin: 32px;
+        border: 2px outset #c6b1b1;
+        border-radius: 16px;
+        max-width: 100%;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+}
